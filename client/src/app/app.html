@@ -1,0 +1,6 @@
+<h1 class="text-3xl text-red-500 font-bold w-1/2 mx-auto p-10 mt-10 shadow-xl">{{title()}}!!!</h1>
+<ul>
+    @for (member of members(); track member.id) {
+        <li>{{member.id}} - {{member.displayName}}</li>
+    }
+</ul>
